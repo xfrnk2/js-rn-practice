@@ -1,9 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello! Happy World!</Text>
+      <View>
+        <Text style={styles.dummyText}>Another peice of text!!</Text>
+      </View>
+      <Text style={styles.dummyText}>Hello my friend!!!!!~~~ Happy World!</Text>
+      <Button title="title" />
     </View>
   );
 }
@@ -14,5 +18,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  dummyText: {
+    margin: 16,
+    padding: 16,
+    borderWidth: 2,
+    borderColor: "red",
   },
 });
