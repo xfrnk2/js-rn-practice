@@ -3,6 +3,7 @@ import MapView from "react-native-maps";
 import { StyleSheet, View, Button } from "react-native";
 
 import React, { useState, useEffect } from "react";
+import CustomMarker from "./components/markers/CustomMarker";
 import * as Location from "expo-location";
 
 const GoogleMap = () => {
@@ -47,7 +48,7 @@ const GoogleMap = () => {
           }}
           provider={PROVIDER_GOOGLE}
         >
-          <Marker
+          {/* <Marker
             coordinate={{
               latitude: lag,
               longitude: log,
@@ -55,7 +56,11 @@ const GoogleMap = () => {
             pinColor="#2D63E2"
             title="하이"
             description="내용"
-          />
+          /> */}
+          <CustomMarker
+            coordinate={{ latitude: lag, longitude: log }}
+            anchor={{ x: 0.5, y: 1 }}
+          ></CustomMarker>
         </MapView>
       )}
     </View>
