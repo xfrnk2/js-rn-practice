@@ -1,12 +1,8 @@
-import QRCode from "react-native-qrcode-svg";
+import { useState } from "react";
+import { StyleSheet, View, FlatList, Button } from "react-native";
+
 import GoalItem from "./components/GoalItem";
 import GoalInput from "./components/GoalInput";
-import GoogleMap from "./GoogleMap";
-
-import React, { useState, useEffect } from "react";
-import { Platform, Text, View, StyleSheet } from "react-native";
-
-import * as Location from "expo-location";
 
 export default function App() {
   const [modalIsVisible, setModalIsVisible] = useState(false);
@@ -35,12 +31,7 @@ export default function App() {
 
   return (
     <View style={styles.appContainer}>
-      <QRCode value="https://naver.com" style={styles.qrCode} />
-      <GoogleMap />
-      {/* <View style={styles.appContainer}>
-        <Text style={styles.paragraph}>{text}</Text>
-      </View> */}
-      {/* <Button
+      <Button
         title="Add New Goal"
         color="#5e0acc"
         onPress={startAddGoalHandler}
@@ -68,7 +59,7 @@ export default function App() {
           }}
           alwaysBounceVertical={false}
         />
-      </View> */}
+      </View>
     </View>
   );
 }
@@ -82,9 +73,5 @@ const styles = StyleSheet.create({
 
   goalsContainer: {
     flex: 5,
-  },
-
-  qrCode: {
-    flex: 1,
   },
 });
