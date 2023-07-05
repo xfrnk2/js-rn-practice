@@ -11,24 +11,19 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.bsk.sojang",
       "config": {
-        "googleMapsApiKey": "AIzaSyApX3VmO2HZ15n6ANx8HH48PDR95S4fG5M"
+        "googleMapsApiKey": "Key를이곳에입력"
       },
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "Your location is needed for the app to function properly."
       }
     },
     "android": {
-      "permissions": [
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION"
-      ],
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
       "package": "com.bsk.sojang",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -36,7 +31,7 @@
       },
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyDmc0Z6MFVY0unE8koGHtZhfd7Pl8eZC_o"
+          "apiKey": "Key를이곳에입력"
         }
       }
     },
